@@ -4,14 +4,12 @@ let win;
 
 function createWindow() {
     win = new BrowserWindow({
-        width: 700,
-        height: 500,
+        width: 400,
+        height: 300,
+        resizable: false
     })
 
-    win.loadURL(`file:${__dirname}/dist/password-generator/browser/index.html`)
-
-    // include DevToolsnpm 
-    win.webContents.openDevTools()
+    win.loadURL(`file:${__dirname}/dist/password-generator/index.html`)
 
     win.on('closed', function() {
         win=null
