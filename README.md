@@ -1,6 +1,5 @@
-# PasswordGenerator
-
-The project generates random set of characters that can be used to set or reset password across online accounts.
+# <img src="https://github.com/mohitbhasin/password-generator/blob/develop/icons/icon.png?raw=true" alt="drawing" width="40" align=center>asswordGenerator
+The project generates random set of characters that can be used to set or reset password across online accounts. 
 
 ## Project Description
 
