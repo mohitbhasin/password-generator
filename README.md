@@ -21,7 +21,8 @@ Features for the future:
 - Add mini app for the menu bar.
 - Ability to change background color for the app.
 
-![Image](https://github.com/mohitbhasin/password-generator/blob/develop/demo.gif?raw=true)
+<!-- ![Image](https://github.com/mohitbhasin/password-generator/blob/develop/demo.gif?raw=true) -->
+<img src="https://github.com/mohitbhasin/password-generator/blob/develop/demo.gif?raw=true" width="500">
 
 ## How to package and run the app
 ### Prerequisites
