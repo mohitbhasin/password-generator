@@ -1,27 +1,48 @@
-# PasswordGenerator
+# <img src="https://github.com/mohitbhasin/password-generator/blob/develop/icons/icon.png?raw=true" alt="drawing" width="40" align=center>asswordGenerator
+The project generates random set of characters that can be used to set or reset password across online accounts. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## Project Description
 
-## Development server
+The password can be generated with a click of a button from the UI. The default length of the password will be 11. The length of password can range between 7 and 16, which can be adjusted using the slider.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Every generated password will include:
+- Special Character
+- Number
+- Upper Case Alphabet
+- Lower Case Alphabet
 
-## Code scaffolding
+NodeJs, Typescript, Angular and Electron have been used for the development of this project. NodeJs and Angular makes building project and adding libraries convenient. Angular also has large selection of libraries and features including Material Design UI components. Electron helps package javascript style apps into desktop apps with support for all major OS platforms.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Some of the challenges faced during the development were:
+- Adjusting CSS to align the components.
+- Generating custom icon for the electron app.
 
-## Build
+Features for the future:
+- Add mini app for the menu bar.
+- Ability to change background color for the app.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<img src="https://github.com/mohitbhasin/password-generator/blob/develop/demo.gif?raw=true" width="500">
 
-## Running unit tests
+## How to package and run the app
+### Prerequisites
+- Node is required for installing dependencies of the project.
+- Electron is required for package the application into desired OS.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Setup and Run
+- Clone the repository, install dependencies
+```
+$git clone https://github.com/mohitbhasin/password-generator.git
 
-## Running end-to-end tests
+$cd password-generator
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+$npm install
+```
 
-## Further help
+- Package the application using electron (Mac). The application will be generated under password-generator-darvin-x64 directory.
+```
+$electron-packager . --platform=darwin --overwrite --icon=icons/pass_gen.icns
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## How to use the application
+- Clicking Generate button will display random password.
+- Use the slider to adjust the length of password to be generated.
